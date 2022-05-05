@@ -6,6 +6,7 @@ const categoryCtrl = {
         try {
             const categories = await Category.find()
             res.json(categories)
+          //res.json('Category test ctrl')
         } catch (err) {
             return res.status(500).json({msg: err.message})
         }
